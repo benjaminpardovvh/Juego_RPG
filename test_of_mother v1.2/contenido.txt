@@ -1,0 +1,4 @@
+-graficos pixel-art y efectos (particulas, destellos, sacudida de pantalla)
+-Sala de Monstruos con 5 enemigos y el jefe Madre Quimera (3 fases)
+-combate con escena animada y sonidos por accion
+-opciones de volumen, sacudida de pantalla y particulas

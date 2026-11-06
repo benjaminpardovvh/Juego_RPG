@@ -1,0 +1,2 @@
+sub-version de la v1.5: mismo contenido, solo cambia el formato del codigo (indentado)
+-sin cambios de jugabilidad

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><title>Test Of Mother</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div id="wrap">
+<canvas id="c" width="640" height="480"></canvas>
+<div id="ov"></div>
+<div id="title" class="scr"><h1>Test Of Mother</h1><button id="play">JUGAR</button><button id="opt">OPCIONES</button></div>
+<div id="opts" class="scr hid"><div class="box" style="position:static;width:540px">
+<h2>OPCIONES</h2>
+<label><input type="checkbox" id="snd" checked> Sonido activado</label><br>
+<label>Volumen <input type="range" id="vol" min="0" max="100" value="80"></label><br>
+<label><input type="checkbox" id="shk" checked> Sacudida de pantalla</label><br>
+<label><input type="checkbox" id="par" checked> Partículas y efectos</label>
+<h3>Controles</h3>
+<p>Flechas / WASD: mover · Mouse: clic para caminar o interactuar · E: interactuar · I: inventario y equipo · O: opciones · ESC: cerrar ventanas o volver en el menú de combate · 1-5: elegir opción del menú de combate</p>
+<h3>Mecánicas</h3>
+<p>Toca a un enemigo para iniciar el combate ATB: cada personaje y enemigo tiene su propio contador (la velocidad lo acelera). Cuando un aliado dice ¡LISTO! todo el combate se detiene hasta que ejecute ATACAR, MAGIA, APOYO, OBJETOS o HUIR. Si el protagonista llega a 0 HP: GAME OVER. El HP es un contador rodante. Inventarios: 20 de utilidad y 20 de equipo. La Sala de Monstruos está a la izquierda de la sala de prueba; los enemigos reaparecen al volver a entrar.</p>
+<button id="oclose">VOLVER</button></div></div>
+</div>
+<script src="js/gfx.js"></script>
+<script src="js/game.js"></script></body></html>

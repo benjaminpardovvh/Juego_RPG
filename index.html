@@ -8,16 +8,28 @@ body{margin:0;background:#0b0b12;display:flex;justify-content:center;align-items
 h2{font-size:26px;color:#fd4;text-shadow:3px 3px #a22;margin:0 0 26px;animation:flt 2.4s ease-in-out infinite}
 .grid{display:grid;grid-template-columns:repeat(3,170px);gap:18px}
 .grid a{display:flex;align-items:center;justify-content:center;height:96px;font-size:20px;color:#fff;text-decoration:none;border:4px double #fff;border-radius:8px;background:linear-gradient(180deg,#0c0c24,#000);box-shadow:3px 3px 0 #0009,inset 0 0 10px #4a5aff44;box-sizing:border-box}
-.grid a:hover{background:#fd4;color:#000}
+.grid a:hover,.grid a:focus{background:#fd4;color:#000;outline:none}
+#desc{box-sizing:border-box;width:560px;height:48px;margin-top:16px;padding:6px 12px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;line-height:1.25;color:#cfe;background:#0008;border:2px double #fff8;border-radius:6px}
 </style></head><body>
 <div id="wrap">
 <h2>Selecciona una versión</h2>
 <div class="grid">
-<a href="test_of_mother%20v1.0/index.html">TOM v1.0</a>
-<a href="test_of_mother%20v1.1/index.html">TOM v1.1</a>
-<a href="test_of_mother%20v1.5/index.html">TOM v1.5</a>
-<a href="test_of_mother%20v1.6/index.html">TOM v1.6</a>
-<a href="test_of_mother%20v1.7/index.html">TOM v1.7</a>
-<a href="test_of_mother%20v1.8/index.html">TOM v1.8</a>
-</div></div>
+<a href="test_of_mother%20v1.0/index.html" data-desc="Prototipo inicial (ChatGPT): combate por turnos básico, reclutamiento, mercader y equipo sin pulir.">TOM v1.0</a>
+<a href="test_of_mother%20v1.1/index.html" data-desc="Reescritura con Claude: combate ATB, niveles, estados alterados, inventario, equipo por personaje y opciones.">TOM v1.1</a>
+<a href="test_of_mother%20v1.2/index.html" data-desc="Gran expansión sobre la v1.1: gráficos pixel-art y efectos, Sala de Monstruos, 5 enemigos y jefe Madre Quimera, más opciones.">TOM v1.2</a>
+<a href="test_of_mother%20v1.3/index.html" data-desc="Añade el elemento fuego y la quemadura, poderes para todo el equipo y descripciones de poderes en combate.">TOM v1.3</a>
+<a href="test_of_mother%20v1.5/index.html" data-desc="Golpes críticos (¡SMAAAASH!), poderes por niveles 1/2/α, parálisis, amuletos en la tienda y nuevos nombres.">TOM v1.5</a>
+<a href="test_of_mother%20v1.5.1/index.html" data-desc="Sub-versión de la v1.5: mismo contenido con el código reformateado, sin cambios de jugabilidad.">TOM v1.5.1</a>
+<a href="test_of_mother%20v1.5.2/index.html" data-desc="Sub-versión de la v1.5: aviso de estado del proyecto al empezar y rediseño del poder Energía (5 MP).">TOM v1.5.2</a>
+<a href="test_of_mother%20v1.7/index.html" data-desc="Nuevo NPC Sanador que cura al grupo y pantalla final al derrotar a la Madre Quimera.">TOM v1.7</a>
+<a href="test_of_mother%20v1.7.1/index.html" data-desc="Sub-versión de la v1.7: el Sanador ahora también restaura la magia (MP) del grupo.">TOM v1.7.1</a>
+</div>
+<div id="desc">Pasa el mouse sobre una versión para ver qué contiene.</div></div>
+<script>
+(function(){var d=document.getElementById('desc'),t=d.textContent;
+document.querySelectorAll('.grid a').forEach(function(a){
+var on=function(){d.textContent=a.getAttribute('data-desc')},off=function(){d.textContent=t};
+a.addEventListener('mouseenter',on);a.addEventListener('focus',on);
+a.addEventListener('mouseleave',off);a.addEventListener('blur',off)})})();
+</script>
 </body></html>

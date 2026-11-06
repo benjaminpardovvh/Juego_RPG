@@ -1,0 +1,3 @@
+-elemento fuego (Llama e Infierno) con quemadura en enemigos
+-poderes para todo el equipo (Recuperar Total, Curacion Total) y PSI Onda
+-descripciones de los poderes al pasar el mouse en combate
