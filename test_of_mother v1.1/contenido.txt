@@ -1,0 +1,9 @@
+una version algo mas prolija del mismo prototipo
+-un apartado visual mas estetica que la version anterior
+-un sistema de combate mas sofisticado
+-Sistema de reclutamiento mejorado
+-Efectos de estados negativos como veneno implementados
+-Sistema de equipacion por personaje arreglado
+-Inventario funcional
+-Apartado de opciones implementado
+desarrollado con claude

@@ -1,0 +1,8 @@
+este es el prototipo del prototipo.
+-sistema de combate algo rudimentario
+-graficos poco desarrollados
+-interaccion algo limitada
+-reclutamiento de personajes
+-mercader con multiples objetos
+-sistema de equipacion poco trabajado
+desarrollado con chat gpt

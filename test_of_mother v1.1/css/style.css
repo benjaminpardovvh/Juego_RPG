@@ -1,0 +1,13 @@
+body{margin:0;background:#111;display:flex;justify-content:center;align-items:center;height:100vh;font:14px "Courier New",monospace;color:#fff}
+#wrap{position:relative;width:640px;height:480px}
+canvas{image-rendering:pixelated;display:block;background:#000}
+#ov{position:absolute;inset:0;pointer-events:none}
+.scr{position:absolute;inset:0;background:#102;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:5}
+.scr h1{font-size:44px;color:#fd4;text-shadow:3px 3px #a22;margin:0 0 30px}
+.hid{display:none!important}
+.box{pointer-events:auto;position:absolute;background:#000;border:4px double #fff;border-radius:6px;padding:6px 8px;box-sizing:border-box}
+.pc.on{border-color:#fd4}.pc.ko{opacity:.5}
+.tm{position:absolute;width:132px;height:18px;border:2px solid #fff;text-align:center;font-size:12px;line-height:18px;background:#222;box-sizing:border-box}
+button{font:inherit;background:#222;color:#fff;border:2px solid #888;margin:2px;padding:3px 8px;cursor:pointer}
+button:hover:not(:disabled){background:#fff;color:#000}button:disabled{opacity:.4;cursor:default}
+small{color:#aaa}hr{border:0;border-top:1px solid #555}

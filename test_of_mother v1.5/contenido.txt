@@ -1,0 +1,5 @@
+hay una version medio perdida que va antes de esta, vere si la encuentro
+-Implementacion de los ataques criticos (Smash)
+-cambio de sistema de combate (si el lider cae no termina la pelea automaticamente)
+-Implementacion del sistema de compra de amuletos
+desarrollado con claude

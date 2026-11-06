@@ -1,0 +1,3 @@
+-Implementacion de un mensaje final tras derrotar al jefe
+-Nuevo npc que restaura la vida del grupo
+Desarrollado con Claude

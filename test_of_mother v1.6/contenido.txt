@@ -1,0 +1,4 @@
+-Implementacion de disclaimer sobre el estado del proyecto
+-Cambio en el funcionamiento del hechizo "Energia" ahora cuesta 5 mana 
+y recupera segun el nivel de magia.
+Desarrollado con claude

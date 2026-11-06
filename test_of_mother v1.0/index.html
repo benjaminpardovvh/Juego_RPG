@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Test Of Mother</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="titleScreen" class="screen title-screen">
+    <div class="title-card">
+      <p class="eyebrow">UN PEQUEÑO RPG DE PRUEBA</p>
+      <h1>Test Of Mother</h1>
+      <p>Una habitación, un enemigo y demasiadas cosas por probar.</p>
+      <button id="startBtn" class="primary">JUGAR</button>
+      <button id="titleOptionsBtn" class="secondary">OPCIONES</button>
+    </div>
+  </main>
+
+  <main id="gameScreen" class="screen game-screen hidden">
+    <header class="topbar">
+      <div class="brand">TEST OF MOTHER <span>— TEST ROOM</span></div>
+      <div class="top-stats">
+        <span id="goldLabel">₵ 0</span><span id="levelLabel">NIVEL 1</span>
+        <button id="inventoryBtn">INVENTARIO</button>
+        <button id="optionsBtn">OPCIONES</button>
+      </div>
+    </header>
+    <section class="game-layout">
+      <div class="world-wrap">
+        <canvas id="world" width="960" height="600" aria-label="Habitación de prueba"></canvas>
+        <div class="world-hint">Flechas / WASD: mover · Click: caminar · E: interactuar · ESC: cerrar</div>
+        <div id="toast" class="toast"></div>
+      </div>
+      <aside class="side-panel">
+        <h2>ESTADO DEL GRUPO</h2>
+        <div id="partyStatus"></div>
+        <div class="side-note">La vida usa una barra rodante estilo RPG clásico: el daño y la curación tardan un instante en asentarse.</div>
+      </aside>
+    </section>
+  </main>
+
+  <section id="dialog" class="modal hidden">
+    <div class="modal-card">
+      <button class="close" data-close>×</button>
+      <h2 id="dialogTitle">PERSONAJE</h2>
+      <div id="dialogBody"></div>
+    </div>
+  </section>
+
+  <section id="combat" class="combat-screen hidden">
+    <div class="combat-header"><span>¡UN ENEMIGO TE BLOQUEA EL PASO!</span><span id="combatMessage">El enemigo se prepara...</span></div>
+    <div class="battlefield">
+      <div class="enemy-portrait"><div class="enemy-sprite">☠</div><b id="enemyName">Sombra de prueba</b><small id="enemyHp">HP 24 / 24</small></div>
+      <div class="party-battle" id="battleParty"></div>
+    </div>
+    <div class="battle-bottom">
+      <div class="battle-menu">
+        <div class="battle-menu-title">¿QUÉ HARÁN?</div>
+        <div id="battleActions" class="battle-actions"></div>
+      </div>
+      <div class="battle-log" id="battleLog">El combate comienza.</div>
+    </div>
+  </section>
+
+  <script src="js/game.js"></script>
+</body>
+</html>

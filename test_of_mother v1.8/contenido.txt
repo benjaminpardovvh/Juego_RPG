@@ -1,0 +1,2 @@
+-Ahora el Curandero tambien restaura la magia del grupo.
+Desarrollado con Claude
