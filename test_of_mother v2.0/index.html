@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><title>Another Inspired Mother Game (AIMG) · TOM 2.0</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div id="wrap">
+<canvas id="c" width="640" height="480"></canvas>
+<div id="ov"></div>
+<div id="title" class="scr"><h1 class="tt">Another Inspired<br>Mother Game</h1><div class="sub">AIMG · TOM 2.0</div>
+<button id="play">NUEVA PARTIDA</button><button id="cont">CONTINUAR</button><button id="opt">OPCIONES</button></div>
+<div id="slots" class="scr hid"></div>
+<div id="cine" class="scr hid" style="background:#000;animation:none"></div>
+<div id="opts" class="scr hid" style="z-index:12"><div class="box" style="position:static;width:560px;max-height:440px;overflow:auto">
+<h2>OPCIONES</h2>
+<label><input type="checkbox" id="snd" checked> Sonido activado</label><br>
+<label>Volumen <input type="range" id="vol" min="0" max="100" value="80"></label><br>
+<label>Velocidad del texto <select id="txt"><option value="22">Lenta</option><option value="42" selected>Normal</option><option value="80">Rápida</option><option value="999">Instantánea</option></select></label><br>
+<label><input type="checkbox" id="shk" checked> Sacudida de pantalla</label><br>
+<label><input type="checkbox" id="par" checked> Partículas y efectos</label>
+<h3>Controles</h3>
+<p>Flechas / WASD: mover · Clic: caminar o interactuar · E / Espacio / Enter: interactuar y avanzar diálogos · 1-9: elegir opción en diálogos y en el combate · I: menú (objetos, equipo, guardar) · O: opciones · ESC: cerrar ventanas o volver atrás en el combate</p>
+<h3>Cómo se juega</h3>
+<p>Toca a un enemigo para iniciar un combate ATB: cada personaje y enemigo tiene su barra; cuando un aliado está ¡LISTO!, el tiempo se detiene hasta que actúe. Si dudas, El Mentor de My Fantasy Town te enseña a pelear. Cada personaje tiene arma, armadura y dos ranuras de Trinkets. El HP y el PP se restauran en los Teléfonos rojos, que también guardan la partida. El juego hace autoguardados en puntos clave; hay 3 ranuras. Los enemigos reaparecen al volver a entrar en una sala.</p>
+<button id="oclose">VOLVER</button></div></div>
+<div id="dlg" class="hid"><div id="dbox" class="dlgbox"><canvas id="dpt" width="64" height="64"></canvas><div class="dtx"><b id="dnm"></b><div id="dtt"></div><div id="dch"></div></div><span id="dnx">▼</span></div></div>
+</div>
+<script src="js/gfx.js"></script>
+<script src="js/data.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/save.js"></script>
+<script src="js/story.js"></script>
+<script src="js/world.js"></script>
+<script src="js/game.js"></script></body></html>

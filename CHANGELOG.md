@@ -6,6 +6,7 @@ Cada versión se compara contra la anterior en la secuencia. Los cambios grandes
 
 | Versión | Clasificación | Antes se llamaba | En una línea |
 |---|---|---|---|
+| v2.0 | Versión (Another Inspired Mother Game) | — | Primera zona jugable del proyecto real: Suon Side, Triny, Preludios, Espacio Blanco, tutorial, guardado y diálogos |
 | v1.7.1 | Sub-versión de v1.7 | v1.8 | El Sanador también restaura el maná |
 | v1.7 | Versión | v1.7 | NPC Sanador y pantalla final tras el jefe |
 | v1.5.2 | Sub-versión de v1.5 | v1.6 | Aviso inicial y rediseño de "Energía" |
@@ -17,6 +18,21 @@ Cada versión se compara contra la anterior en la secuencia. Los cambios grandes
 | v1.0 | Versión | v1.0 | Prototipo inicial hecho con ChatGPT |
 
 ---
+
+## v2.0 — Versión · Another Inspired Mother Game (AIMG)
+
+*Primera versión orientada al proyecto real (no a la fase técnica). Base: v1.7.1. Las demás versiones no se tocan.*
+
+- **Nueva estructura de código**: `data.js` (datos), `dialog.js` (diálogos), `save.js` (guardado), `story.js` (guion), `world.js` (salas) y `game.js` (motor).
+- **Personajes según el documento de diseño**: Tommy (tanque/soporte, *Hammer of Justice* y *Capucha Familiar*) y Triny (atacante híbrida, *La Espina Familiar* y *Vestido Heredado*). Cada personaje tiene arma, armadura y **2 ranuras de Trinkets**. Nuevo **escudo que absorbe daño** (Escudo, Muro).
+- **Primera zona jugable: Suon Side** (5 salas + *Habitación Prestada* a la que se llega por una conversación), 3 enemigos nuevos (Murmullo, Mirada, Compañero), **Triny desbloqueable** y jefe **Lo Irreconocible** (magia elemental, Escudo PSI y robo de PP). Entrega un Trinket.
+- **My Fantasy Town** (hub): empieza vacío y se reconstruye al derrotar al jefe (la farola de Suon Side).
+- **Corredores Preludio I y II**: vitrales con pistas del trauma y objetos que Tommy destruye de forma cada vez más violenta; en el II, Triny lo cuestiona.
+- **Espacio Blanco** (Zona Fantasma de Suon Side) con la **Máscara**, jefe secreto opcional que entrega equipamiento definitivo.
+- **El Mentor** (comerciante y maestro): tutorial interactivo de combate en 2 lecciones (básico, y magia/estados con Triny).
+- **Sistema de diálogos**: retratos, texto con voz por personaje, opciones, narración y tienda con comerciante que reacciona a la compra.
+- **Sistema de guardado**: 3 ranuras (localStorage), Teléfonos rojos, autoguardado en puntos clave, continuar/borrar, Game Over con carga del último guardado y opciones persistentes.
+- La demo termina en la puerta sellada del Tablero Ruidoso (Zona 2, aún no disponible), con pantalla de fin de demo.
 
 ## v1.7.1 — Sub-versión de v1.7
 

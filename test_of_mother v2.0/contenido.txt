@@ -1,0 +1,7 @@
+AIMG · TOM 2.0 (base: v1.7.1)
+- Primera zona jugable (Suon Side) con Triny desbloqueable y jefe Lo Irreconocible.
+- Corredores Preludio I y II y Espacio Blanco (Zona Fantasma) con la Máscara.
+- El Mentor: tienda y tutorial de combate.
+- Sistema de diálogos para personajes y compras.
+- Sistema de guardado (3 ranuras, autoguardado, Teléfonos rojos).
+Desarrollado con Claude
